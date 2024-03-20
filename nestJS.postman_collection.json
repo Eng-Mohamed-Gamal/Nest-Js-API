@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "26172b80-39bd-4ba7-86e4-064960b15b66",
+		"name": "nestJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31072678"
+	},
+	"item": [
+		{
+			"name": "signUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"mohamed\" ,\r\n    \"email\" : \"testUpdate3333322222@gmail.com\",\r\n    \"password\" : \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/signUp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"testUpdate33333\",\r\n    \"password\" : \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accesstoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vaGFtZWRnYW1hbDAxMDEyNzA3NTA0QGdtYWlsLmNvbSIsImlkIjoiNjVmYWQwNmVlNTEwMDdmMjRlOWEyM2EyIiwiaWF0IjoxNzEwOTM3MzMwfQ.h_l-vmith_-xKB_9DV_jesvSHLoKLE0jMgXRdHFHG6I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"testUpdate33333\" ,\r\n    \"name\" : \"after33333\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/updateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"updateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accesstoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RVcGRhdGUzMzMzMzIyMjIyQGdtYWlsLmNvbSIsImlkIjoiNjVmYWY0YWJkOWEyN2U4OGI0YzlmZGQ2IiwiaWF0IjoxNzEwOTQ1NDU5fQ.xjk3LGkIIFWd6l5VNnDzAKfhblu5opHsU7FcCRvE7PE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/user/deleteUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"deleteUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProfile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accesstoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RVcGRhdGUzMzMzMyIsImlkIjoiNjVmYWQwNmVlNTEwMDdmMjRlOWEyM2EyIiwiaWF0IjoxNzEwOTQ3ODUyfQ.V4L7C1Iw1EQvM2iAWtE_KpUTnJn22o7c01jjkkGfvNc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/user/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
